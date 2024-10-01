@@ -1,0 +1,106 @@
+/*---Inicio da estilização das bordas---*/
+p.dotted {
+    border: 3px;
+    border-style: dotted;
+    border-color: darkmagenta;
+}
+p.dashed {
+    border: 3px;
+    border-style: dashed;
+    border-color: darkmagenta;
+}
+p.solid {
+    border: 3px;
+    border-style: solid;
+    border-color: darkmagenta;
+}
+p.double {
+    border: 3px;
+    border-style: double;
+    border-color: darkmagenta;
+}
+p.groove {
+    border: 3px;
+    border-style: groove;
+    border-color: darkmagenta;
+}
+p.ridge {
+    border: 3px;
+    border-style: ridge;
+    border-color: darkmagenta;
+}
+p.inset {
+    border: 3px;
+    border-style: inset;
+    border-color: darkmagenta;
+}
+p.outset {
+    border: 3px;
+    border-style: outset;
+    border-color: darkmagenta;
+}
+p.none {
+    border: 3px;
+    border-style: none;
+    border-color: darkmagenta;
+}
+p.hidden {
+    border: 3px;
+    border-style: hidden;
+    border-color: darkmagenta;
+}
+p.mix {
+    border: 3px;
+    border-style: dotted dashed solid double;
+    border-color: darkmagenta;
+}
+
+
+
+/*---Fim da estilização das bordas---*/
+
+/*---Inicio das margins---*/
+
+.control-margin{
+    border: 1px solid black;
+    margin: 20% 10% 10% 20%;
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+}
+.control-padding{
+    border: 1px solid black;
+    margin: 20% 10% 10% 20%;
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+}
+/*---Fim das Margins---*/
+
+/*---Inicio da manipulação de tamanho---*/ 
+
+.control-height-width{
+    border: 1px solid black;
+    height: 300px;
+    width: 600px;
+    max-width: 300px;
+}
+/*---Fim da manipulação de tamanho---*/
+
+/*---Manipulação de Divs---*/
+
+.div-pai{
+    margin: 20px;
+    height: 300px;
+    background-color: greenyellow;
+}
+
+.div-filho{
+    margin:auto;
+    width: 60%;
+    height: 40px;
+    background-color: darkmagenta;
+    text-align: center;
+}
