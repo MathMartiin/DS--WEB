@@ -1,0 +1,13 @@
+.emlinha{
+    display: inline;
+}
+body{
+    width: 550px;
+    margin: auto;
+    background: #eee;
+    padding: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    
+}
