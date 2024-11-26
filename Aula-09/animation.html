@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Animação</title>
+<style>
+/* Define os passos da animação */
+@keyframes moverEfeito {
+0% {
+transform: translateX(0);
+background-color: red;
+}
+20% {
+transform: translateX(200px);
+background-color: orange;
+}
+40% {
+transform: translateX(0);
+background-color: yellow;
+}
+60% {
+transform: translateX(200px);
+background-color: blue;
+}
+80% {
+transform: translateX(0);
+background-color: purple;
+}
+100%{
+transform: translateX(200px);
+background-color: green;
+}
+}
+/* Aplica a animação ao elemento */
+.animado {
+width: 100px;
+height: 100px;
+background-color: red;
+}
+.animado:hover{
+    animation: moverEfeito 4s ease-in-out infinite;
+}
+</style>
+</head>
+<body>
+<div class="animado"></div>
+</body>
+</html

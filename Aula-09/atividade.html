@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<style>
+ body{
+    background: linear-gradient(45deg, #3498db,#2d2ddb, #9b59b6);
+ }
+ .quadrado-scale{
+        width: 100px;
+        height: 100px;
+        background-color: greenyellow;
+        transition: transform 0.5s;
+    }
+
+.quadrado-scale:hover{
+    transform: scale(1.5);
+}
+/**/
+.quadrado-translate{
+        width: 100px;
+        height: 100px;
+        background-color: greenyellow;
+        transition: transform 0.5s;
+    }
+
+.quadrado-translate:hover{
+    transform: translate(50px, 50px);
+}
+/**/
+.quadrado-rotate{
+        width: 100px;
+        height: 100px;
+        background-color: greenyellow;
+        transition: transform 0.5s;
+    }
+
+.quadrado-rotate:hover{
+    transform: rotate(45deg);
+}
+/**/
+ </style>
+<body>
+    <div class="container">
+    <div class="quadrado-scale"></div>
+    <div class="quadrado-translate"></div>
+    <div class="quadrado-rotate"></div>
+    <div class="quadrado-opacity"></div>
+    <div class="quadrado-border-radius"></div>
+    <div class="quadrado-scale"></div>
+    </div>
+</body>
+</html>

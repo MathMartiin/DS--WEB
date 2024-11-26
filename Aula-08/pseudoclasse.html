@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+    <style>
+        /*Aplica estilo quando o mouse passa sobre o elemento.*/
+        .button-hover:hover {
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            
+        }
+        /*Aplica estilo ao elemento no momento em que ele está sendo clicado*/
+        .button-active:active {
+            transform: scale(0.95);
+        }
+        /*Aplica estilo a elementos que estão focados, como campos de formulário.*/
+        .input-focus:focus {
+            background-color: aqua;
+            color: green;
+        }
+        /*Exemplo de checked*/
+        .radio-checked:checked{
+            transform: scale(1.5);
+        }
+        .checkbox-checked:checked{
+            transform: scale(1.5);
+        }
+        /*Estiliza links que ainda não foram visitados.*/
+        a:link{
+            color: chocolate;
+        }
+        /*Estiliza links que já foram visitados.*/
+        a:visited{
+            color: lightpink
+        }
+
+        div{
+            height: 100px;
+            width: 100px;
+            padding: auto;
+            margin-block: 10px;
+            border-radius: 10px;
+            background-color: purple;
+        }
+
+        div:empty{
+            background-color: black;
+            width: auto;
+        }
+        div:not(.div-vazia){
+            background-color: rgb(216, 216, 216);
+            width: auto;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <h3>Exemplo de Hover</h3>
+    <button class="button-hover">Clique Aqui!</button>
+</div>
+    <div>
+        <h3>Exemplo de active</h3>
+    <button class="button-active">Clique Aqui!</button>
+</div>
+    <div>
+    <h3>Exemplo de Focus</h3>
+<input class="input-focus" placeholder="Clique Aqui!"/>
+</div>
+    <div>
+        <h3>Exemplo de Checked</h3>
+        <label>Radio button</label>
+        <input type="radio" class="radio-checked"><input type="radio" class="radio-checked">
+        <label>Checkbox</label>
+        <input type="checkbox" class="checkbox-checked">
+    </div>
+    <div>
+        <a href="#" class="link-1">link 1</a>
+        <a href="#" class="link-2" >link 2</a>
+        <a href="#" class="link-3">link 3</a>
+        <a href="#" class="link-4">link 4</a>
+        <a href="#" class="link-5">link 5</a>
+        <a href="#" class="link-6">link 6</a>
+        <a href="#" class="link-7">link 7</a>
+        <a href="#" class="link-8">link 8</a>
+        <a href="#" class="link-9">link 9</a>
+        <a href="#" class="link-10">link 10</a>
+    </div>
+
+    <div class="div-vazia"></div>
+</body>
+</html>
