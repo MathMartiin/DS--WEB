@@ -30,6 +30,4 @@ foreach($alunos as $aluno){
     $media = ($aluno['matematica'] + $aluno['portugues'])/2;
     echo "Media:" .$aluno['nome'] ." " . $media . "<br>"; 
 }
-
-
 ?>
