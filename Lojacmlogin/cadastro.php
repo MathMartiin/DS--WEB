@@ -16,6 +16,9 @@
         <label>Email: </label>
         <input type="text" name="email">
         <br>
+        <label>Senha: </label>
+        <input type="text" name="senha">
+        <br>
         <input type="submit">
         <br><br>
         <div class="list-two">
@@ -26,24 +29,26 @@
     <form action="insertionProduto.php" method="POST">
         <h1>Produto</h1>
         <label>Nome: </label>
-        <input type="text" name="nomep">
+        <input type="text" name="nome">
         <br><br>
-        <label>Valor: </label>
-        <input type="text" name="valor">
+        <label>Descrição: </label>
+        <input type="text" name="descricao">
         <br><br>
-        <label>Estoque: </label>
-        <input type="text" name="estoque">
+        <label>Preço: </label>
+        <input type="text" name="preco">
         <br>
         <input type="submit">
         <br><br>
         <div class="list-one">
         <?php include "produto.php"?>
         </div>
-
+        
     </form>
     </div>
     </div>
     <br><br><br>
+    <br>
+    <a href="logout.php"><button>Logout</button></a>
     
 </body>
 </html>

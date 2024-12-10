@@ -2,12 +2,12 @@
 
     include_once('conexao.php');
 
-    $sql = "SELECT * FROM cliente ORDER BY nome ASC";
+    $sql = "SELECT * FROM usuario ORDER BY nome ASC";
     $resultado = mysqli_query($conexao, $sql);
     // Verificar se há registros
     if (mysqli_num_rows($resultado) > 0) {
     while ($linha = mysqli_fetch_assoc($resultado)) {
-    echo "ID: " . $linha['id'] . " Nome: " . $linha ['nome'] . "<br>" . " Email: " . $linha ['email'] . "<br>";}
+    echo "ID: " . $linha['id'] . " Nome: " . $linha ['nome'] . "<br>" . " Email: " . $linha ['email'] . "<br>" ."Senha: " . $linha ['senha']. "<br>";}
     } else {
     echo "Nenhum registro encontrado.";
     } 
