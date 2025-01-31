@@ -6,7 +6,4 @@ var tempo = prompt("Digite o tempo")
 
 var calculo = capital * ((taxa / 100)+1)**tempo;
 
-var resultadoFinal = parseFloat(calculo.toFixed(2));
-
-
 alert(calculo.toFixed(2));
