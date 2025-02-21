@@ -1,0 +1,40 @@
+input{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.minhadiv{
+    text-align: center;
+}
+
+
+.minhadiv{
+    display: inline;
+    width: 2%;
+    font-size: 14px;
+}
+
+
+
+#adicionarcartao{
+    width: 100%;
+    border: 2px solid #ffb300;
+    background-color: #fff;
+    color: #ffb300;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+
+    
+}
+#adicionarcartao:hover{
+    background-color: #ffb300;
+    color: #fff;
+    transition: all linear 0.3s;
+}
+
+  

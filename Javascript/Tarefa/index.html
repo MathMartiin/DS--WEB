@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Cartão</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+
+        <div class="minhadiv">
+    <h1>Gerador de Cartão</h1>
+
+    <input type="text" id="nome" placeholder="Digite um nome">
+    <input type="text" id="descricao" placeholder="Digite uma descrição">
+
+    <button
+
+onclick="adicionarcartao()">Criar Cartão</button>
+
+<h2>Cartões criados:</h2>
+<ul id="frutasLista"></ul>
+
+<script>
+
+var frutas = []; // Vetor para armazenar as
+
+frutas
+
+function adicionarcartao() {
+
+var frutaInput =
+
+document.getElementById("frutaInput");
+
+var fruta = frutaInput.value.trim(); //
+
+
+if (fruta !== "") {
+frutas.push(fruta); // Adiciona a fruta
+
+
+
+frutaInput.value = ""; // Limpa a caixa
+
+
+
+// Atualiza a lista de frutas na página
+atualizarListaDeFrutas();
+}
+}
+
+function atualizarListaDeFrutas() {
+
+var frutasLista =
+
+document.getElementById("frutasLista");
+
+frutasLista.innerHTML = ""; // Limpa a
+
+
+
+// Itera sobre o vetor de frutas e cria
+
+
+
+for (var i = 0; i < frutas.length; i++) {
+var li = document.createElement("li");
+li.textContent = frutas[i];
+frutasLista.appendChild(li);
+}
+}
+
+</script>
+</div>
+</body>
+</html>
