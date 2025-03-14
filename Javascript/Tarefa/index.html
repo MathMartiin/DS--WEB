@@ -1,75 +1,47 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-    <title>Cartão</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Cartões!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Gerador de Cartões Dinâmicos</h2>
+  <input type="text" id="nome" placeholder="Digite o nome">
+  <input type="text" id="descricao" placeholder="Digite uma descrição">
+  <button onclick="criarCartaoDina()">Criar Cartão</button>
+  <div id="container"></div>
 
-        <div class="minhadiv">
-    <h1>Gerador de Cartão</h1>
-
-    <input type="text" id="nome" placeholder="Digite um nome">
-    <input type="text" id="descricao" placeholder="Digite uma descrição">
-
-    <button
-
-onclick="adicionarcartao()">Criar Cartão</button>
-
-<h2>Cartões criados:</h2>
-<ul id="frutasLista"></ul>
-
-<script>
-
-var frutas = []; // Vetor para armazenar as
-
-frutas
-
-function adicionarcartao() {
-
-var frutaInput =
-
-document.getElementById("frutaInput");
-
-var fruta = frutaInput.value.trim(); //
-
-
-if (fruta !== "") {
-frutas.push(fruta); // Adiciona a fruta
-
-
-
-frutaInput.value = ""; // Limpa a caixa
-
-
-
-// Atualiza a lista de frutas na página
-atualizarListaDeFrutas();
-}
-}
-
-function atualizarListaDeFrutas() {
-
-var frutasLista =
-
-document.getElementById("frutasLista");
-
-frutasLista.innerHTML = ""; // Limpa a
-
-
-
-// Itera sobre o vetor de frutas e cria
-
-
-
-for (var i = 0; i < frutas.length; i++) {
-var li = document.createElement("li");
-li.textContent = frutas[i];
-frutasLista.appendChild(li);
-}
-}
-
-</script>
-</div>
+  <script>
+    function criarCartaoDina() {
+      const nome = document.getElementById("nome").value;
+      const descricao = document.getElementById("descricao").value;
+   
+      const cartao = document.createElement("div");
+      cartao.setAttribute("class", "cartao");
+     
+      const titulo = document.createElement("h3");
+      titulo.textContent = nome;
+     
+      const texto = document.createElement("p");
+      texto.textContent = descricao;
+     
+      const botaoExcluir = document.createElement("button");
+      botaoExcluir.textContent = "Excluir";
+      botaoExcluir.onclick = function() {
+          cartao.remove();
+      }
+     
+      cartao.appendChild(botaoExcluir);
+      cartao.appendChild(titulo);
+      cartao.appendChild(texto);
+     
+      document.getElementById("container").appendChild(cartao);
+     
+      document.getElementById("nome").value = "";
+      document.getElementById("descricao").value = "";
+    }
+  </script>
 </body>
 </html>
