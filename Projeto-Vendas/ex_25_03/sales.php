@@ -26,7 +26,7 @@
 
     <div class="table-sales">
         <h1>Sales</h1>
-        <a><button>Create Sale</button></a>
+        <a href="./createSales.php"><button>Create Sale</button></a>
         <?php include "./assets/components/tableSales.php"?>
     </div>
 
